@@ -11,16 +11,16 @@ namespace Task4
         static void Main(string[] args)
         {
             Console.WriteLine("Введите ваше имя");
-            var name = Console.ReadLine();
+            string name = Console.ReadLine();
 
             Console.WriteLine("Введите вашу фамилию");
-            var surname = Console.ReadLine();
+            string surname = Console.ReadLine();
 
             Console.WriteLine("Укажите вас возвраст");
-            var age = Console.ReadLine();
+            string age = Console.ReadLine();
 
             Console.WriteLine("Укажите ваш знак зодиака");
-            var zodiacSign = Console.ReadLine();
+            string zodiacSign = Console.ReadLine();
 
             Console.WriteLine("Вас зовут {0} {1}. Вам {2}. Ваш знак зодиака - это {3}", surname, name, age, zodiacSign);
             Console.ReadLine();

@@ -19,9 +19,9 @@ namespace Task7
                 priceForCrystalInGold);
             int boughtCrystalsCount = int.Parse(Console.ReadLine());
 
-            float playerGoldAfterBuy = playerGold - boughtCrystalsCount * priceForCrystalInGold;
+            playerGold = playerGold - boughtCrystalsCount * priceForCrystalInGold;
 
-            Console.WriteLine("Баланс кристалов {0}, баланс золотых {1}", boughtCrystalsCount, playerGoldAfterBuy);
+            Console.WriteLine("Баланс кристалов {0}, баланс золотых {1}", boughtCrystalsCount, playerGold);
             Console.ReadLine();
         }
     }

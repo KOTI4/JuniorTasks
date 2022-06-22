@@ -11,12 +11,14 @@ namespace Task8
         static void Main(string[] args)
         {
             int minutesForOnePatient = 10;
+            int minutesInHour = 60;
 
             Console.WriteLine("Введите количество людей в очереди");
             int numberPeopleInQueue = int.Parse(Console.ReadLine());
 
-            int hoursToWait = numberPeopleInQueue / (60 / minutesForOnePatient);
-            int minutesToWait = numberPeopleInQueue * minutesForOnePatient - hoursToWait * 60;
+            int averageTimeToWaitInMinutes = numberPeopleInQueue * minutesForOnePatient;
+            int hoursToWait = averageTimeToWaitInMinutes / minutesInHour;
+            int minutesToWait = averageTimeToWaitInMinutes - hoursToWait * minutesInHour;
 
             Console.WriteLine("Вы должны отстоять в очереди {0} часа и {1} минут", hoursToWait, minutesToWait);
             Console.ReadLine();

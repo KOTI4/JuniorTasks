@@ -18,7 +18,7 @@ namespace Task8
 
             int averageTimeToWaitInMinutes = numberPeopleInQueue * minutesForOnePatient;
             int hoursToWait = averageTimeToWaitInMinutes / minutesInHour;
-            int minutesToWait = averageTimeToWaitInMinutes - hoursToWait * minutesInHour;
+            int minutesToWait = averageTimeToWaitInMinutes % minutesInHour;
 
             Console.WriteLine("Вы должны отстоять в очереди {0} часа и {1} минут", hoursToWait, minutesToWait);
             Console.ReadLine();
